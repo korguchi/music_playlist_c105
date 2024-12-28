@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>プレイリスト</title>
+    <link rel="stylesheet" href="playlist.css" />
+    <script src="playlist.js"></script>
+  </head>
+<body>
+  <div class="audio-playlist">
+    <div class="control-jacket">
+      <div class="controls">
+        <div class="row">
+          <button class="toggle play-btn" type="button" aria-label="Play"></button>
+          <div class="playing-title">Title</div>
+        </div>
+        <div class="row">
+          <div class="time" role="timer">
+            <span class="current-time">0:00</span>
+          </div>
+          <input class="range-slider" type="range" name="seek" value="0"
+            step=".1" aria-label="seek bar">
+          <div class="time" role="timer">
+            <span class="duration">0:00</span>
+          </div>
+        </div>
+        <div class="row">
+          <button class="skip-backward skip-backward-btn" type="button"
+            aria-label="Skip Backward"></button>
+          <button class="skip-forward skip-forward-btn" type="button"
+            aria-label="Skip Forward"></button>
+          <button class="mute volume-btn" type="button" aria-label="Mute"></button>
+          <input class="range-slider" type="range" name="vol" min="0.0"
+            max="1.0" value="1.0" step=".1" aria-label="volume bar">
+          <button class="loop loop-btn" type="button" aria-label="Loop"></button>
+        </div>
+      </div>
+      <div class="jacket">
+      <img src="jacket/draft2.png" id="jacket", width="240px">
+      </div>
+    </div>
+    <div class="track-list">
+      <ul>
+        <li id="skt" data-audio-src="music/skt_maseter.wav">01. 空の彼方 / シャイニーカラーズ</li>
+        <li id="nhm" data-audio-src="music/nhm_master.wav">02. 虹のはじまり / イルミネーションスターズ</li>
+        <li id="moc" data-audio-src="music/moc_master.wav">03. Messenger of Cumlonimbus / アンティーカ</li>
+        <li id="fkr" data-audio-src="music/fkr_master.wav">04. フシギ缶蹴リズム / 放課後クライマックスガールズ</li>
+        <li id="dms" data-audio-src="music/dms_maseter.wav">05. ドリーミィ・ショー / アルストロメリア</li>
+        <li id="adz" data-audio-src="music/adz_master.wav">06. Accelerating Danger Zone / ストレイライト</li>
+        <li id="its" data-audio-src="music/its_master.wav">07. いつか飛ぶ空に / ノクチル</li> 
+        <li id="cns" data-audio-src="music/cns_master.wav">08. CAST NO SHADOW / シーズ</li>
+        <li id="gzc" data-audio-src="music/gzc_master.wav">09. 偶像クライシス / コメティック</li>>
+      </ul>
+    </div>
+  </div>
+</body>
